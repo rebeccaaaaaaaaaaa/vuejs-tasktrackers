@@ -5,7 +5,7 @@ import BarraLaterral from "./components/BarraLaterral.vue";
 import FormularioContent from "./components/Formulario.vue";
 import Tarefa from './components/Tarefa.vue'
 import Box from './components/Box.vue'
-import type ITarefa from './interfaces/ITarefa'
+import type {ITarefa} from './interfaces/ITarefa'
 
 export default defineComponent({
   name: "App",
