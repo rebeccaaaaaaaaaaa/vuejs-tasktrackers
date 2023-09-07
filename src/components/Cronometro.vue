@@ -1,6 +1,7 @@
 <template>
   <div>
-    <strong class="display">{{ tempoDecorrido }}</strong>
+    <i class="fa fa-clock"></i>
+    <strong class="display ml-2">{{ tempoDecorrido }}</strong>
   </div>
 </template>
 
