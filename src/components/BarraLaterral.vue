@@ -6,7 +6,7 @@
         <button class="button" @click="alterarTema">
           {{ textoBotao }}
         </button>
-        <nav class="panel mt-5">
+        <nav class="menu mt-5">
           <ul class="">
             <li>
               <RouterLink :to="'/'" class="link">
@@ -57,21 +57,22 @@
 /* todo o estilo do componente */
 header {
   padding: 1rem;
-  background: #eee;
+  background:  var(--bg-primario);
   width: 100%;
   height: 100vh;
   text-align: center;
+  border-right: solid 1px #eee;
 }
 
 h1{
     text-align: center;
 }
 
-.panel li {
+.menu li {
     margin: 8px 0;
 }
 .link {
-    color: #333;
+    color: var(--texto-primario);
 }
 .link:hover {
     color: #FAF0CA;
