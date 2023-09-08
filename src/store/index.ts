@@ -1,5 +1,5 @@
 import type IProjeto from "@/interfaces/IProjeto";
-import { createStore, Store } from "vuex/types/index.js";
+import { createStore, Store } from "vuex";
 import type { InjectionKey } from 'vue'
 
 interface State {
