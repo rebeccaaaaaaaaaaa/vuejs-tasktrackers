@@ -22,11 +22,22 @@
             </li>
           </ul>
         </nav>
+        <!-- 
+          <p class="mt-5"> Lista dos Projetos </p>
+        <ul class="panel p-3">
+          <li v-for="projeto in projetos" :key="projeto.id" class="p-1 mb-3">
+            {{ projeto.nome }}
+          </li>
+        </ul>
+        -->
     </header>
 </template>
 
 <script lang="ts">
- import { defineComponent } from 'vue';
+// add o computed a nossa importação
+ import { defineComponent, computed } from 'vue';
+ // importar nosso hook, não vou precisar importar a key pq o hook ja ta fazendo isso
+ import { useStore } from '@/store';
 
  export default defineComponent({
     name: 'BarraLateral',
@@ -49,7 +60,13 @@
         this.modoEscuroAtivo = !this.modoEscuroAtivo
         this.$emit('aoTemaAlterado', this.modoEscuroAtivo)
       }
+    },
+    setup(){
+    const store = useStore()
+    return {
+      projetos: computed(() => store.state.projetos)
     }
+  }
  })
 </script>
 

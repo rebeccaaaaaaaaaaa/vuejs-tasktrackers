@@ -51,7 +51,7 @@ export default defineComponent({
       this.$emit('aoSalvarTarefa', {
         duracaoEmSegundos: tempoDecorido,
         descricao: this.descricao,
-        projeto: this.projetos.find(proj => proj.id === this,this.idProjeto)
+        projeto: this.projetos.find((proj: { id: string }) => proj.id === this.idProjeto)
       })
       this.descricao = ''
     }

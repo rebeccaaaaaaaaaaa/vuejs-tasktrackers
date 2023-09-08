@@ -1,5 +1,21 @@
 {
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [
+      "vue",
+      "vuex"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ],
   "files": [],
+  
   "references": [
     {
       "path": "./tsconfig.node.json"
@@ -9,3 +25,4 @@
     }
   ]
 }
+
