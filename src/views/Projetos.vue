@@ -47,7 +47,7 @@ export default defineComponent({
     salvar(){
         const projeto: IProjeto = {
             nome: this.nomeDoProjeto,
-            id: new Date().toISOString(),
+            id: new Date().toLocaleDateString(),
         }
         this.projetos.push(projeto)
         this.nomeDoProjeto = ''
